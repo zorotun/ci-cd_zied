@@ -26,7 +26,7 @@ jobs:
           pip install -r requirements.txt
           # dev tools for CI
           pip install pytest pytest-cov coverage ruff
-
+          pip install fastapi httpx pytest pytest-cov coverage ruff         
       - name: Lint (ruff)
         run: |
           ruff check .
