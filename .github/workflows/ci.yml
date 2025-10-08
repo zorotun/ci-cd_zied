@@ -33,5 +33,6 @@ jobs:
 
       - name: Run tests and check coverage
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest --cov=app --cov-report=xml
           coverage report --fail-under=80
