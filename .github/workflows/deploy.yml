@@ -21,5 +21,5 @@ jobs:
           APP_SECRET: ${{ secrets.APP_SECRET }}
         run: |
           echo "Déploiement de l'image $IMAGE sur production..."
-          # show masked secret length (to demonstrate usage without printing it)
+          # show masked secrets length (to demonstrate usage without printing it)
           echo "APP_SECRET length: ${#APP_SECRET}"
